@@ -1,0 +1,68 @@
+
+body{
+
+    background-image: url("dino.jpg");
+    font-family: 'Roboto';
+    font-size: 24px;
+
+    transition-duration: 1s;
+    transition-property: all;
+
+}
+
+#lang_center_article
+{
+    background-color: rgba(40,40,40,0.4);
+
+    text-align: center;
+
+    height: 275px;
+    padding-top: 40px;
+    margin-top: 200px;
+
+    color: white;
+}
+
+#lang_button
+{
+    background-color: transparent;
+    border: none;
+}
+
+#lang_button_image
+{
+    width: 60px;
+    height: 60px;
+
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+#lang_button:hover body
+{
+    filter: blur(8px);
+}
+
+#lang_button:hover #lang_button_image
+{
+    width: 100px;
+    height: 100px;
+}
+
+#lang_button_start
+{
+    background-color: rgba(40,40,40,0.8);
+    border-radius: 8px;
+    border-style: solid;
+
+    color: white;
+
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+#lang_button_start:hover
+{
+    color: white;
+    background-color: purple;
+}

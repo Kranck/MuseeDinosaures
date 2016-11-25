@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lang.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <title>Languages</title>
+    </head>
+    <body>
+        <div class="container-fluid" id="lang_container_fluid">
+            <div class="container" id="lang_container">
+                <div class="row" id="lang_row">
+                    <article class="col-md-3">
+                        <!-- <p>YE SUIS LA</p> -->
+                    </article>
+                    <article class="col-md-6" id="lang_center_article">
+                        <p id="lang_paragraph">
+                            Please select your language
+                        </p>
+                            <div class="">
+                                <button type="button" name="button" id="lang_button" onclick="ChangeLanguage('French')">
+                                    <img src="flags/french.png" id="lang_button_image">
+                                </button>
+                                <button type="button" name="button" id="lang_button" onclick="ChangeLanguage('English')">
+                                    <img src="flags/english.png" id="lang_button_image">
+                                </button>
+                                <button type="button" name="button" id="lang_button" onclick="ChangeLanguage('Spanish')">
+                                    <img src="flags/spain.png" id="lang_button_image">
+                                </button>
+                                <br><br>
+                                <button type="button" name="button" id="lang_button_start" onclick="GoToIndex()">
+                                    Start the visit !
+                                </button>
+                            </div>
+
+                    </article>
+                    <article class="col-md-3">
+                        <!-- <p>YE SUIS LA</p> -->
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+            function ChangeLanguage(lang)
+            {
+                var newTextLang = "";
+                var newTextButton = "";
+                if(lang == "French")
+                {
+                    newTextLang = "Merci de selectionner votre language";
+                    newTextButton = "Commencer la visite !";
+                }else if(lang == "English")
+                {
+                    newTextLang = "Please select your language";
+                    newTextButton = "Start the visit !";
+                }else if(lang == "Spanish")
+                {
+                    newTextLang = "Por favor selectare su langua";
+                    newTextButton = "Empezar la exploracion !";
+                }
+                document.getElementById('lang_paragraph').innerHTML = newTextLang;
+                document.getElementById('lang_button_start').innerHTML = newTextButton;
+            }
+
+            function GoToIndex()
+            {
+                window.location.href = "index.html";
+            }
+
+        </script>
+
+    </body>
+</html>
