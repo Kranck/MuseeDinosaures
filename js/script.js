@@ -1,7 +1,10 @@
 $( document ).ready(function()
 {
 
-    SetButton( $("button[name='button']") );
+    $( $("button[name='button']") ).each( function functionName() {
+      SetButton( $(this) );
+    } );
+
 
     //Configure un bouton pour ouvrir une div qu'il cible avec son attribut target
     function SetButton(targetButton)
