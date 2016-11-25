@@ -8,5 +8,17 @@ body{
 div.container-fluid > div.row > div.map{
     width: 200px;
     height: 200px;
-    background-color: pink;
+    background-image: url('Map_musee.jpg');
+}
+
+div.container-fluid > div.row > button.hidden_button{
+  width: 40px;
+  height: 40px;
+  opacity: 0.1;
+}
+
+div.container-fluid > div.row > div.hud{
+  color: white;
+  font-size: 40;
+  font-weight: 500;
 }
