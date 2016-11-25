@@ -9,8 +9,7 @@ div.container-fluid > div.row > div.map{
     width: 200px;
     height: 200px;
     background-image: url('Map_musee.jpg');
-    background-color: rgba(255,255,255,0.2);
-    margin : 5px 5px 0px 0px;
+    margin : 10px 10px 0px 0px;
 }
 
 div.container-fluid > div.row > button.hidden_button{
@@ -20,8 +19,18 @@ div.container-fluid > div.row > button.hidden_button{
 }
 
 div.container-fluid > div.row > div.hud{
+  margin-top: 310px;
   color: white;
   font-size: 40;
-  font-weight: 500;
+  font-weight: 500
+}
 
+div.container-fluid > div.row > div#score{
+  -webkit- transform: rotateZ(-5deg);
+  transform: rotateZ(-5deg);
+}
+
+div.container-fluid > div.row > div#player_name{
+  -webkit- transform: rotateZ(5deg);
+  transform: rotateZ(5deg);
 }
