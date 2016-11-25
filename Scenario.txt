@@ -1,0 +1,83 @@
+
+        Scenario - Musee Dinosaures - IHM
+           MEYER - WUY - BAYLE - BEAUX
+
+Arrivée d'un visiteur :
+
+    Recuperation de la tablette.
+    La tablette est une tablette Android qui tourne sur l'application.
+    L'application est sécurisée de sorte a ce qu'elle ne puisse pas etre fermée
+    (en tout cas par les visiteurs).
+    La tablette est protégée par une coque disposant de hances laterales.
+
+    La premier fenetre de l'application est un page de configuration permettant la maintenance
+    de celle-ci par le staff du musée.
+    La seconde fenetre est un texte disposant d'un viseur pour le premier QR CODE et
+    affichant les rapeaux des differentes langues disponibles.
+
+    Scan du premier QR CODE servant a :
+        -Lancer l'application
+        -Initialiser la position de la tablette (X | Y | Z)
+        -Initialiser la direction du regard de la camera pour la situer dans l'espace
+
+    Choix de la langue (Francais | Anglais | Espagnol)
+
+    L'interface de l'application propose :
+        -Une barre de score, indiquant le nombre de points collectés par l'utilisateur
+        -Une "minimap" :
+            -Situation de l'utilisateur dans le musée
+            -Situtation des points d'interet du musée :
+                -Quizzs
+                -Dinausores (ossements)
+                -Points vidéo
+        La minimap est quasi-integralement cachée, seules les zones du musée
+        explorées sont visibles par le joueur ainsi que les points d'interet
+        que contient cette zone.
+        Un utilisateur scane une borne a chaque entrée de zone, lorsque ces
+        bornes sont scannées la zone est découverte sur la minimap.
+
+        -Un bouton "roadmap" qui retrace toute l'evolution de l'utilisateur,
+        il peut grace a cet ecran visualiser son parcours et revoir les videos,
+        questions du quizz qu'il a deja vu.
+
+        -Un bouton d'appel du staff. Si jamais la tablette rencontre un probleme
+        ou que l'utilisateur est perdu etc... il pourra directement apeller le staff
+        qui le localisera grace a la tablette dans le musée pour regler le probleme.
+
+    Un utilisateur se balade dans le musée en suivant sa minimap pour se diriger vers les
+    points d'interet non visités, une fois arrivé a un point d'interet il pourra interagir
+    de differentes facon selon le point d'interet :
+        -Un quizz :
+            Type : Scan d'un QR CODE
+            Un quizz sera composé de plusieurs questions auxquelles l'utilisateur devra repondre.
+            Depuis cette borne on pourra retrouver les informations des spécimens précédemment croisés
+            et lancer un quizz sur la section que le visiteur vient de traverser.
+            Le quizz se déroule de la façon suivante :
+
+                Une fenêtre s’affiche au centre de l’interface.
+                Une question est affichée avec, eventuellement, une image.
+                Quatres réponses seront proposées, l’utilisateur en choisit une.
+                Si la réponse est correcte, une icone verte s'affiche et l'utilisateur gagne des points.
+                Si il donne la mauvaise réponse, une icone rouge apparait, et la bonne réponse est indiquée.
+                Puis il passe à la question suivante.
+                Si la fin du quizz est atteinte on l’indique à l’utilisateur et
+                on l’invite à passer à la section suivante.
+
+        -Un dinosaure :
+            Type : Regarder avec la tablette
+            Lorqu'un utilisateur se rapproche d'un dinausore et le regarde avec la tablette, celui-ci sera visibles
+            sur la tablette de maniere "vivante", le dinausore bougera un peu sorte d'animation "idle" et sera
+            visible comme s'il était vivant.
+        -Une vidéo :
+            Type : Scan d'un QR CODE
+            L'utilisateur pourra scaner un QR CODE qui declenchera une video explicative sur sa tablette
+            La video sera accompagné de commentaires audio dont il pourra disposer grâce au casque audio
+        -Une entrée de zone :
+            Type : Scan d'un QR CODE
+            L'utilisateur pourra scaner un QR CODE afin de dévoiler une zone du musée.
+            Ainsi, une zone sera visible ainsi que les points d'interet qu'elle contient sur la minimap.
+
+    A la fin de la visite, le visiteur scan un dernier QR CODE pour conclure la visite, son score
+    est enregistré et si il est dans le top 10 il y est ajouté et gagne un Goodie.
+    L'utilisateur rend sa tablette et le staff la reconfigure sur l'ecran d'acceuil visiteur apres
+    avoir réinitialisé les données (points d'interets visités, zones découvertes etc...).
