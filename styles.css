@@ -1,0 +1,12 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('dino.jpg');
+  background-size: cover;
+}
+
+div.container-fluid > div.row > div.map{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
