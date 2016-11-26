@@ -52,21 +52,77 @@
 
       <!-- Modals -->
 
-      <div class="modal fade" id="modalQuizz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <!-- modalQuizz -->
+      <div class="modal fade" id="modalQuizz" tabindex="-1" role="dialog" aria-labelledby="modalQuizzLabel">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h3>Quizz</h3>
-            </div>
             <div class="modal-body">
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <a href="#" class="thumbnail">
+                        <img src="billyosaurus-rex-jw.jpg" alt="billyosaurus-rex">
+                      </a>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-6">
+                      <h2>Billyosaurus-rex !</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Dans quelle région du monde se trouve le Billyosaurus-rex ?</h3>
+                  </div>
+                </div>
+                <br/>
+                <form class="form-horizontal">
+                   <div class="form-group">
+                     <div class="col-md-6">
+                       <button type="button" id="R1" class="btn btn-primary btn-lg" onclick="quizzsolve();">Les terres sauvages de LPRO SIL</button>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                     <div class="col-md-6">
+                       <button type="button" id="R2" class="btn btn-primary btn-lg" onclick="quizzsolve()">Dans la grande mer de café</button>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                     <div class="col-md-6">
+                       <button type="button" id="R3" class="btn btn-primary btn-lg" onclick="quizzsolve()">Sous ton lit</button>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                     <div class="col-md-6">
+                       <button type="button" id="R4" class="btn btn-primary btn-lg" onclick="quizzsolve()">Plus ou moins vers le Quick</button>
+                     </div>
+                   </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <script>
+        function quizzsolve(){
+          $("#R1").css('background-color', '#5cb85c');
+          $("#R1").css('border-color', '#4cae4c');
+
+          $("#R2").css('background-color', '#c9302c');
+          $("#R2").css('border-color', '#ac2925');
+
+          $("#R3").css('background-color', '#c9302c');
+          $("#R3").css('border-color', '#ac2925');
+
+          $("#R4").css('background-color', '#c9302c');
+          $("#R4").css('border-color', '#ac2925');
+        }
+
+
+
+      </script
 
       <div class="modal fade" id="modalQuizz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog">
