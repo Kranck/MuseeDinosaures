@@ -18,19 +18,36 @@ div.container-fluid > div.row > button.hidden_button{
   opacity: 0.1;
 }
 
+div#hud {
+  position: relative;
+  height: 400px;
+}
+
 div.container-fluid > div.row > div.hud{
-  margin-top: 310px;
   color: white;
-  font-size: 40;
-  font-weight: 500
+  font-size: 35px;
+  font-weight: 500;
 }
 
 div.container-fluid > div.row > div#score{
+  position: absolute;
+  padding-left: 35px;
   -webkit- transform: rotateZ(-5deg);
   transform: rotateZ(-5deg);
 }
 
 div.container-fluid > div.row > div#player_name{
+  position: absolute;
+  right: 3px;
+  text-align: center;
   -webkit- transform: rotateZ(5deg);
   transform: rotateZ(5deg);
+}
+
+/* Commun à div#score et div#player_name */
+
+div#score, div#player_name {
+    bottom: 0;
+    background-color: rgba(0,120,200,0.7);
+    height: 50px;
 }
