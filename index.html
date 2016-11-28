@@ -111,6 +111,9 @@
       </div>
 
       <script>
+        setTimeout(RotateDino,10);
+        var rotation = 0;
+
         function quizzsolve(){
           $("#R1").css('background-color', '#5cb85c');
           $("#R1").css('border-color', '#4cae4c');
@@ -125,30 +128,19 @@
           $("#R4").css('border-color', '#ac2925');
         }
 
-      </script
+        function RotateDino()
+        {
+            document.getElementById("dinoQuiTourne").style.transform = 'rotateY('+rotation+'deg)';
+            setTimeout(RotateDino,10);
+            rotation += 1;
+        }
+
+
+      </script>
 
       <!-- Modal Dino-->
       <div class="modal fade" id="modalDino" tabindex="-1" role="dialog" aria-labelledby="myModalLabelQuizz">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-5">
-                  <a href="#" class="thumbnail">
-                  <img src="billyosaurus-rex-jw.jpg" alt="billyosaurus-rex">
-                  </a>
-                </div>
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-6">
-                  <h2>Billyosaurus-rex !</h2>
-                </div>
-              </div>
-              <div class="row">
-              </div>
-            </div>
-          </div>
-        </div>
+          <img id="dinoQuiTourne" src="billyosaurus-rex-jw.jpg" alt="billyosaurus-rex">
       </div>
 
       <div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
