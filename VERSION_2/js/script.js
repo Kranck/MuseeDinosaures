@@ -1,19 +1,20 @@
 $( document ).ready(function()
 {
+
     SetHiddeddiv();
-    
+
     $(".response").on('click', function(){
         var value = $(this).data("resp");
 
         if(value == true)
         {
-            $(this).css( { 
+            $(this).css( {
                 "background-color" : "rgba(67,160,71, 1)"
             } );
         }
     });
-    
-    $("#start_form").submit(function( event ) 
+
+    $("#start_form").submit(function( event )
     {
         event.preventDefault();
         var pseudo = $("#pseudo_val").val();
@@ -23,7 +24,7 @@ $( document ).ready(function()
     });
 
     SetScoring();
-    function SetScoring() 
+    function SetScoring()
     {
         var value = parseInt( $("#score").text() );
         value +=  Math.floor((Math.random() * 10) + 1);
@@ -107,9 +108,9 @@ $( document ).ready(function()
     /**
      * Verifie l'etat de visibilite (data-show) de chaque div avec le name hiddenDiv et modifie leurs visibilité en fonction
      */
-    function SetHiddeddiv() 
+    function SetHiddeddiv()
     {
-        $("div[name=hiddenDiv]").each(function () { 
+        $("div[name=hiddenDiv]").each(function () {
             var state = GetHidenValue($(this), "show");
 
             if( state == false )
@@ -124,13 +125,14 @@ $( document ).ready(function()
          });
     }
 
+
     //Retourne le data-[dataname] de la div [element]
     function GetHidenValue(element, dataname) {
         return $(element).data(dataname);
     }
 
     /*
-     *  Affiche ou caches les buttons triggerBut 
+     *  Affiche ou caches les buttons triggerBut
      */
     function SetTriggerButtons(showState) {
         $("button[name=triggerBut]").each( function(){
