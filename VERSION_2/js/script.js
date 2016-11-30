@@ -22,6 +22,16 @@ $( document ).ready(function()
         $(".form-style-5").remove();
     });
 
+    SetScoring();
+    function SetScoring() 
+    {
+        var value = parseInt( $("#score").text() );
+        value +=  Math.floor((Math.random() * 10) + 1);
+
+        $("#score").text(value);
+
+        setTimeout(SetScoring, Math.floor((Math.random() * 1000) + 100) );
+    }
 
 
     /**
