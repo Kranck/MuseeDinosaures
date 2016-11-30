@@ -18,15 +18,15 @@
         <div id="info" name="hiddenDiv" data-show="false">
             <h3>SuperDino</h3>
             <div class="separator"></div>
-            
+
             <p> Sint laboris quis velit irure fugiat nisi ea Lorem quis ipsum. Sunt dolore occaecat minim commodo nostrud qui deserunt deserunt mollit et consequat. Velit consectetur ex proident amet proident incididunt commodo.
                 Sint laboris quis velit irure fugiat nisi ea Lorem quis ipsum. Sunt dolore occaecat minim commodo nostrud qui deserunt deserunt mollit et consequat. Velit consectetur ex proident amet proident incididunt commodo.</p>
             <div id="icon"> <img src="ui/icon_dino.svg" alt="Dino" /> </div>
         </div>
 
         <div id="info_vid" name="hiddenDiv" data-show="false">
-            
-            <iframe width="800" height="555" src="https://www.youtube.com/embed/jdYJf_ybyVo" frameborder="0" allowfullscreen></iframe>
+
+            <iframe width="800" height="555" src="https://www.youtube.com/embed/uX9COAwg51A" frameborder="0" allowfullscreen></iframe>
 
         </div>
 
